@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<project name="LMS" default="help">
+ 
+    <!-- SET TOMCAT PATH -->
+    <property name="tomcat.home" value="/home/kowsi-nts0203/apache-tomcat-10.1.49"/>
+
+    <property name="src.dir" value="src/java"/>
+    <property name="build.dir" value="WEB-INF/classes"/>
+
+    <target name="help">
+        <echo>--- LOCAL PROJECT COMMANDS ---</echo>
+        <echo>ant compile</echo>
+        <echo>ant run</echo>
+        <echo>ant stopserver</echo>
+        <echo>ant clean</echo>
+    </target>
+
+    <!-- CLEAN -->
+    <target name="clean" depends="compile">
+        <delete file="LMS.war"/>
+        <echo>CLEAN DONE</echo>
+    </target>
+
+    <!-- COMPILE -->
+    <target name="compile">
+        <delete dir="${build.dir}/com"/>
+        <mkdir dir="${build.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false">
+            <classpath>
+                <fileset dir="/home/kowsi-nts0203/apache-tomcat-10.1.49/lib" includes="**/*.jar"/>
+            </classpath>
+        </javac>
+        <echo>Compilation done</echo>
+    </target>
+
+    <!-- WAR CREATION -->
+    <target name="war" depends="clean">
+        <jar destfile="LMS.war" basedir=".">
+            <exclude name="build.xml"/>
+            <exclude name="out/**"/>
+        </jar>
+        <echo>WAR Created: LMS.war</echo>
+    </target>
+
+    <!-- DEPLOY + START TOMCAT -->
+    <target name="run" depends="war">
+        <copy file="LMS.war" todir="/home/kowsi-nts0203/apache-tomcat-10.1.49/webapps"/>
+        <echo>WAR Deployed to Tomcat/webapps</echo>
+        <exec executable="/home/kowsi-nts0203/apache-tomcat-10.1.49/bin/startup.sh"/>
+        <echo>Tomcat Starting...</echo>
+
+    </target>
+
+    <!-- STOP TOMCAT -->
+    <target name="stopserver">
+        <exec executable="/home/kowsi-nts0203/apache-tomcat-10.1.49/bin/shutdown.sh"/>
+        <echo>Tomcat Stopped</echo>
+    </target>
+
+</project>
+        

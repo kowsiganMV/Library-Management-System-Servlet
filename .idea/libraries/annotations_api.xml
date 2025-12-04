@@ -1,0 +1,41 @@
+<component name="libraryTable">
+  <library name="annotations-api">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/annotations-api.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/catalina-ha.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/catalina-ant.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/catalina-ssi.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/catalina-storeconfig.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/catalina-tribes.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/catalina.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/ecj-4.27.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/el-api.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/jasper-el.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/jakartaee-migration-1.0.9-shaded.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/jaspic-api.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/jasper.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/jsp-api.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/servlet-api.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/tomcat-api.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/tomcat-coyote-ffm.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/tomcat-coyote.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/tomcat-dbcp.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/tomcat-jni.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/tomcat-jdbc.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/tomcat-util-scan.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/tomcat-util.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/tomcat-websocket.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/websocket-api.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/websocket-client-api.jar!/" />
+      <root url="jar://$USER_HOME$/postgresql-42.7.8.jar!/" />
+      <root url="file://$USER_HOME$/apache-tomcat-10.1.49/lib" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/log4j-api-2.23.1.jar!/" />
+      <root url="jar://$USER_HOME$/apache-tomcat-10.1.49/lib/log4j-core-2.23.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src/java" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/apache-tomcat-10.1.49/lib" recursive="false" />
+  </library>
+</component>
